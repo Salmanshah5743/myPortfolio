@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.freebuff/
+serve.js
+serve.cjs
+*.local
+*.tsbuildinfo
