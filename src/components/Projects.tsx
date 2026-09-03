@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useReveal } from '../hooks/useReveal';
 import { projects, categories, Project } from '../data/projects';
 import {
-  eCommerceIcon,
+  ECommerceIcon,
   IndustrialIcon,
   CorporateIcon,
   ServicesIcon,
@@ -12,7 +12,7 @@ import {
 } from './Icons';
 
 const categoryIconMap: Record<string, React.ReactNode> = {
-  eCommerce: <eCommerceIcon className="w-4 h-4" />,
+  eCommerce: <ECommerceIcon className="w-4 h-4" />,
   Industrial: <IndustrialIcon className="w-4 h-4" />,
   Corporate: <CorporateIcon className="w-4 h-4" />,
   Services: <ServicesIcon className="w-4 h-4" />,
