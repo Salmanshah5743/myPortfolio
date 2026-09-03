@@ -7,6 +7,7 @@ export interface Project {
   description: string;
   tags: string[];
   featured: boolean;
+  image?: string;
 }
 
 export const projects: Project[] = [
@@ -19,6 +20,7 @@ export const projects: Project[] = [
     description: 'Large-scale UAE wholesale and bulk-order eCommerce platform with extensive product categories and shopping functionality.',
     tags: ['eCommerce', 'WordPress', 'WooCommerce', 'Responsive Development'],
     featured: true,
+    image: '/screenshots/bembo-mart.jpg',
   },
   {
     id: 'bembo-grocery',
@@ -29,6 +31,7 @@ export const projects: Project[] = [
     description: 'Consumer-facing grocery shopping experience developed for an extensive online retail catalog.',
     tags: ['eCommerce', 'WooCommerce', 'Front-End', 'Responsive'],
     featured: true,
+    image: '/screenshots/bembo-grocery.jpg',
   },
   {
     id: 'gulf-extrusion',
@@ -39,6 +42,7 @@ export const projects: Project[] = [
     description: 'Corporate digital platform for one of the Middle East\'s established aluminium extrusion manufacturers, presenting products, capabilities, services and major international projects.',
     tags: ['Corporate', 'Industrial', 'WordPress', 'Front-End'],
     featured: true,
+    image: '/screenshots/gulf-extrusion.jpg',
   },
   {
     id: 'auto-deals-uae',
@@ -49,6 +53,7 @@ export const projects: Project[] = [
     description: 'Premium UAE automotive website showcasing luxury cars, supercars and high-end vehicle inventory.',
     tags: ['Automotive', 'Listings', 'WordPress', 'Responsive'],
     featured: true,
+    image: '/screenshots/auto-deals-uae.jpg',
   },
   {
     id: 'lyons-sons',
@@ -59,6 +64,7 @@ export const projects: Project[] = [
     description: 'Professional logistics website for a US-based company providing warehousing, trucking, cargo, rail and food-grade logistics solutions.',
     tags: ['Logistics', 'Corporate Website', 'Responsive', 'WordPress'],
     featured: true,
+    image: '/screenshots/lyons-sons.jpg',
   },
   {
     id: 'trigon',
@@ -69,6 +75,7 @@ export const projects: Project[] = [
     description: 'Corporate website for a major GCC ICT distribution and solutions company serving B2B, retail and professional AV markets.',
     tags: ['Technology', 'Corporate', 'B2B', 'WordPress'],
     featured: true,
+    image: '/screenshots/trigon.jpg',
   },
   {
     id: 'krs-landscape',
@@ -79,6 +86,7 @@ export const projects: Project[] = [
     description: 'Professional website for a landscaping services company.',
     tags: ['Services', 'WordPress', 'Responsive'],
     featured: false,
+    image: '/screenshots/krs-landscape.jpg',
   },
   {
     id: 'al-bataeh',
@@ -89,6 +97,7 @@ export const projects: Project[] = [
     description: 'Corporate website for a cleaning, security and facility services company.',
     tags: ['Corporate', 'Services', 'WordPress'],
     featured: false,
+    image: '/screenshots/al-bataeh.jpg',
   },
   {
     id: 'leading-on-fire',
@@ -97,8 +106,9 @@ export const projects: Project[] = [
     category: 'Personal Development / Program Platform',
     categories: ['Services', 'Technology'],
     description: 'Personal development and coaching program platform.',
-    tags: ['Programs', 'WordPress', 'Custom Development'],
+    tags: ['Programs', 'Framer', 'Custom Development'],
     featured: false,
+    image: '/screenshots/leading-on-fire.jpg',
   },
   {
     id: 'trejo-painting',
@@ -109,6 +119,7 @@ export const projects: Project[] = [
     description: 'Website for a professional painting services company.',
     tags: ['Home Services', 'WordPress', 'Responsive'],
     featured: false,
+    image: '/screenshots/trejo-painting.jpg',
   },
   {
     id: 'tapco',

@@ -1,5 +1,13 @@
 import { useReveal } from '../hooks/useReveal';
 import { expertise } from '../data/experience';
+import { WordPressIcon, WooCommerceIcon, FrontEndIcon, NoCodeIcon } from './Icons';
+
+const expertiseIcons: Record<string, React.ReactNode> = {
+  '01': <WordPressIcon className="w-7 h-7" />,
+  '02': <WooCommerceIcon className="w-7 h-7" />,
+  '03': <FrontEndIcon className="w-7 h-7" />,
+  '04': <NoCodeIcon className="w-7 h-7" />,
+};
 
 function ExpertiseCard({ item, index }: { item: typeof expertise[0]; index: number }) {
   const { ref, isRevealed } = useReveal(0.15);
@@ -17,9 +25,15 @@ function ExpertiseCard({ item, index }: { item: typeof expertise[0]; index: numb
         </span>
 
         <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="text-xs font-mono text-accent/60">{item.number}</span>
-            <div className="w-8 h-[1px] bg-accent/30 group-hover:w-12 transition-all duration-500" />
+          <div className="flex items-center gap-4 mb-5">
+            {/* Icon */}
+            <div className="w-12 h-12 rounded-xl bg-accent/[0.08] border border-accent/[0.15] flex items-center justify-center text-accent/70 group-hover:bg-accent/[0.12] group-hover:text-accent group-hover:border-accent/25 transition-all duration-500">
+              {expertiseIcons[item.number]}
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-mono text-accent/60">{item.number}</span>
+              <div className="w-8 h-[1px] bg-accent/30 group-hover:w-12 transition-all duration-500" />
+            </div>
           </div>
 
           <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors duration-300">

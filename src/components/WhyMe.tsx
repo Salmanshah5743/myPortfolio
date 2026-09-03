@@ -1,37 +1,55 @@
 import { useReveal } from '../hooks/useReveal';
+import {
+  ExperienceIcon,
+  DepthIcon,
+  BridgeIcon,
+  IndustryIcon,
+  PerformanceIcon,
+  ReliableIcon,
+  CollaborativeIcon,
+  ProblemSolvingIcon,
+} from './Icons';
 
 const reasons = [
   {
     title: '11+ Years of Experience',
     description: 'Over a decade of practical web development work across corporate, eCommerce, industrial and service industries.',
+    icon: <ExperienceIcon className="w-5 h-5" />,
   },
   {
     title: 'WordPress & Front-End Depth',
     description: 'Deep working knowledge of WordPress, WooCommerce, custom themes, plugin development, PHP and modern front-end technologies.',
+    icon: <DepthIcon className="w-5 h-5" />,
   },
   {
     title: 'Design & Development Bridge',
     description: 'Ability to understand both visual design intent and technical implementation, reducing friction between teams.',
+    icon: <BridgeIcon className="w-5 h-5" />,
   },
   {
     title: 'Multi-Industry Perspective',
     description: 'Experience building for automotive, logistics, manufacturing, technology, eCommerce and professional services.',
+    icon: <IndustryIcon className="w-5 h-5" />,
   },
   {
     title: 'Performance-Focused',
     description: 'Websites built with attention to loading speed, PageScore optimization, SEO-friendly structure and accessibility.',
+    icon: <PerformanceIcon className="w-5 h-5" />,
   },
   {
     title: 'Reliable Execution',
     description: 'Consistent delivery of production-ready websites that work across browsers, devices and real-world conditions.',
+    icon: <ReliableIcon className="w-5 h-5" />,
   },
   {
     title: 'Collaborative Approach',
     description: 'Comfortable working with designers, back-end developers, project managers and stakeholders to achieve shared goals.',
+    icon: <CollaborativeIcon className="w-5 h-5" />,
   },
   {
     title: 'Problem-Solving Orientation',
     description: 'Hands-on troubleshooting, debugging and implementation across both front-end and WordPress back-end environments.',
+    icon: <ProblemSolvingIcon className="w-5 h-5" />,
   },
 ];
 
@@ -61,9 +79,10 @@ export default function WhyMe() {
                 style={{ transitionDelay: `${i * 0.05}s` }}
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-accent/30 font-mono text-xs mt-1 flex-shrink-0">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
+                  {/* Icon */}
+                  <div className="w-9 h-9 rounded-lg bg-accent/[0.08] border border-accent/[0.12] flex items-center justify-center text-accent/60 flex-shrink-0 mt-0.5">
+                    {reason.icon}
+                  </div>
                   <div>
                     <h3 className="text-base font-bold text-white mb-2">
                       {reason.title}
