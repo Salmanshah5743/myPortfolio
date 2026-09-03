@@ -315,7 +315,7 @@ export function TechIcon({ name, className = 'w-4 h-4' }: IconProps & { name: st
 }
 
 // ===== Project Category Icons =====
-export function eCommerceIcon({ className = 'w-5 h-5' }: IconProps) {
+export function ECommerceIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6z"/>
